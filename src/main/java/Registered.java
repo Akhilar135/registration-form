@@ -17,6 +17,9 @@ public class Registered extends HttpServlet {
 		p.println("Name:"+name);
 		p.println("Email:"+email);
 		p.println("Registration completed");
+		
+		res.setContentType("text/html");
+		p.println("<html><body><a href='Login'>Login</a><body></html>");
 	}
 
 }
